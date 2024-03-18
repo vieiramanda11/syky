@@ -18,7 +18,7 @@ const ProductComplete = ({
   brand,
 }: ProductCompleteCardProps) => {
   return (
-    <div className="lg:flex lg:p-16 my-8 lg:my-32 p-8 w-[90%] md:w-[80%] xxl:w-1/2 mx-auto justify-center bg-neutral-white rounded-md gap-4">
+    <div className="lg:flex lg:p-16 my-8 lg:my-32 p-8 w-[90%] md:w-[80%] xxl:w-[60%] mx-auto justify-center bg-neutral-white rounded-md gap-4">
       <div className="w-full  xxl:w-1/2 h-[300px] relative mb-4 lg:mb-0">
         <Image
           className="rounded-md"
