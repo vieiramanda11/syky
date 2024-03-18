@@ -1,8 +1,17 @@
 import { fetchData } from '@/services/requests';
 import ProductsList from './containers/ProductsList';
 import { BASE_URL } from '@/contants';
+interface SearchParams {
+  category_id: string;
+  designer_id: string;
+  brand_id: string;
+}
 
-export default async function Home({ searchParams }: any) {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) {
   const { category_id, designer_id, brand_id } = searchParams;
 
   const categories = await fetchData(`${BASE_URL}/categories`);

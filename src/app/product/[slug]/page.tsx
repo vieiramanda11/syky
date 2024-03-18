@@ -2,7 +2,11 @@ import { fetchData } from '@/services/requests';
 import '../../globals.css';
 import ProductDetails from '@/app/containers/ProductDetails';
 
-export default async function Product({ params: { slug } }: any) {
+export default async function Product({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
   const data = await fetchData(
     `https://fe-test-api.vercel.app/products/${slug}`
   );

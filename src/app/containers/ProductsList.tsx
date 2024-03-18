@@ -2,15 +2,15 @@
 
 import { useState } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { Category, Product } from '../../../types';
+import { Brand, Category, Designer, Product } from '../../../types';
 import ProductCard from '@/components/ProductCard';
 import Dropdown from '@/components/Dropdown';
 
 interface ProductListProps {
   data: Product[];
   categories: Category[];
-  brands: any[];
-  designers: any[];
+  brands: Brand[];
+  designers: Designer[];
 }
 
 const ProductsList = ({
